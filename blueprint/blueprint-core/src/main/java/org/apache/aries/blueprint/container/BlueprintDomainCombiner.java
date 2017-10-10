@@ -38,7 +38,7 @@ public class BlueprintDomainCombiner implements DomainCombiner {
 
     public ProtectionDomain[] combine(ProtectionDomain[] arg0,
                                       ProtectionDomain[] arg1) {
-        return new ProtectionDomain[] { new BlueprintProtectionDomain(bundleContext) };
+        return arg0;
     }
 
 }
